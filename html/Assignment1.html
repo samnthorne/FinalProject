@@ -7496,21 +7496,43 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="New-York-City-Airbnb-Data:">New York City Airbnb Data:<a class="anchor-link" href="#New-York-City-Airbnb-Data:">¶</a></h2><p>This data originally retrieved from <a href="https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data">Kaggle</a>. The raw data can additionally be found on <a href="https://raw.githubusercontent.com/samnthorne/FinalProject/main/data/AB_NYC_2019.csv">GitHub</a>.</p>
 <p>The link is: <a href="https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data">https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data</a></p>
-<p>This dataset is a summary of Airbnb information in the New York City area during 2019. The data includes review information, host metrics, general metrics about the Bnb, and booking information. This is a public dataset that can be found on [insideairbnb.com].(<a href="http://insideairbnb.com/">http://insideairbnb.com/</a>)</p>
-<h3 id="Sample-of-Airbnb-Data:">Sample of Airbnb Data:<a class="anchor-link" href="#Sample-of-Airbnb-Data:">¶</a></h3>
+<p>This dataset is a summary of Airbnb information in the New York City area during 2019. The data includes review information, host metrics, general metrics about the Bnb, and booking information. This is a public dataset that can be found on <a href="http://insideairbnb.com/">insideairbnb.com</a>.</p>
+<h2 id="Sample-of-Airbnb-Data:">Sample of Airbnb Data:<a class="anchor-link" href="#Sample-of-Airbnb-Data:">¶</a></h2><p>To run this notebook <code>tidyverse</code> must be installed.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d1b5fc10-f703-4705-9575-9542f3b91ae5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d1b5fc10-f703-4705-9575-9542f3b91ae5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">tidyverse</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>── <span class="ansi-bold">Attaching core tidyverse packages</span> ──────────────────────── tidyverse 2.0.0 ──
+<span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">dplyr    </span> 1.1.3     <span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">readr    </span> 2.1.4
+<span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">forcats  </span> 1.0.0     <span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">stringr  </span> 1.5.0
+<span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">ggplot2  </span> 3.4.3     <span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">tibble   </span> 3.2.1
+<span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">lubridate</span> 1.9.3     <span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">tidyr    </span> 1.3.0
+<span class="ansi-green-fg">✔</span> <span class="ansi-blue-fg">purrr    </span> 1.0.2     
+── <span class="ansi-bold">Conflicts</span> ────────────────────────────────────────── tidyverse_conflicts() ──
+<span class="ansi-red-fg">✖</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">filter()</span> masks <span class="ansi-blue-fg">stats</span>::filter()
+<span class="ansi-red-fg">✖</span> <span class="ansi-blue-fg">dplyr</span>::<span class="ansi-green-fg">lag()</span>    masks <span class="ansi-blue-fg">stats</span>::lag()
+<span class="ansi-cyan-fg">ℹ</span> Use the conflicted package (<span class="ansi-blue-fg">&lt;http://conflicted.r-lib.org/&gt;</span>) to force all conflicts to become errors
+</pre>
 </div>
 </div>
 </div>
@@ -7520,7 +7542,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="c1"># Reading in the data set:</span>
@@ -7574,12 +7596,24 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=888572f5-9d19-43a5-83d7-978328302943">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><span style="color: gray;"><strong>Table 1:</strong> First 5 rows of entire New York City AirBnb dataset.</span></p>
+<h3 id="Collecting-information-for-descriptive-summary-of-data:">Collecting information for descriptive summary of data:<a class="anchor-link" href="#Collecting-information-for-descriptive-summary-of-data:">¶</a></h3><p>To begin my exploration of the <a href="https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data">New York City AirBnb data</a>, I am going to use the function <code>summary</code>.</p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=1f327768-ba55-43fa-8cc8-fbbf9fe99405">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="nf">summary</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
@@ -7639,12 +7673,23 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=760d4536-0636-4302-b240-c023b3b1f4cb">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><strong>Further analysis on Categorical variables:</strong></p>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=49d54601-462b-43b7-92a6-861a88c0a6f5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="nf">print</span><span class="p">(</span><span class="nf">paste</span><span class="p">(</span><span class="s">"There are"</span><span class="p">,</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="nf">unique</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">name</span><span class="p">)),</span><span class="w"> </span><span class="s">"Airbnbs"</span><span class="p">))</span>
@@ -7681,7 +7726,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="c1"># viewing unique values for some nominal attributes</span>
@@ -7832,6 +7877,7 @@ a.anchor-link {
 </tr>
 </tbody>
 </table>
+<p><span style="color: gray;"> <strong>Table 2:</strong> Descriptive summary of all attributes in the New York City AirBnb dataset</span></p>
 </div>
 </div>
 </div>
